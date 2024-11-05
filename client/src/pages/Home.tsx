@@ -5,7 +5,7 @@ const Home: React.FC = () => {
     <div className="flex flex-col items-center justify-between h-screen bg-gradient-standard">
       <div className="flex flex-col items-center justify-center flex-grow">
         <h1 className="text-4xl font-bold text-white">Welcome to FitAdmin</h1>
-        <p className="mt-4 text-lg text-gray-700">Training starts with planning</p>
+        <p className="mt-2 text-lg text-gray-700">Training starts with planning</p>
       </div>
       <div className="flex justify-center mb-16">
         <button className="w-full px-20 h-16 bg-white text-gradient-standard rounded-full flex items-center justify-center shadow-lg">
