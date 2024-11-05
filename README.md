@@ -23,5 +23,7 @@ O JSON Web Token é um padrão da Internet para a criação de dados com assinat
    ```
 
 ## Servidor
-Typescript + Node.js
-```npm install sqlite3 sequelize jsonwebtoken express cors bcryptjs```
+1. Typescript + Node.js
+   ```bash
+   npm install sqlite3 sequelize jsonwebtoken express cors bcryptjs
+   ```
