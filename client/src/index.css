@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.typing-effect {
+    display: inline-block; /* Garante que a largura do span seja respeitada */
+    border-right: 2px solid black; /* Cursor */
+    animation: blink 0.75s step-end infinite; /* Efeito de piscar do cursor */
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  
