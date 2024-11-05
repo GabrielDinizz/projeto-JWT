@@ -9,15 +9,18 @@ O JSON Web Token é um padrão da Internet para a criação de dados com assinat
    ```bash
    npm install --save-dev @types/react @types/react-dom
    ```
-    
 
-3. Router-Dom
-```npm install react-router-dom```
-```npm install --save-dev @types/react-router-dom```
+2. **Router-Dom**  
+   ```bash
+   npm install react-router-dom
+   npm install --save-dev @types/react-router-dom
+   ```
 
-4. Tailwind Css
-```npm install -D tailwindcss postcss autoprefixer```
-```npx tailwindcss init -p```
+3. **Router-Dom**  
+   ```bash
+   npm install -D tailwindcss postcss autoprefixer
+   npx tailwindcss init -p
+   ```
 
 ## Servidor
 Typescript + Node.js
