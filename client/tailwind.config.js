@@ -1,4 +1,3 @@
-// tailwind.config.js
 module.exports = {
   content: [
     "./index.html",
@@ -12,6 +11,9 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-standard': 'linear-gradient(to right, #92A3FD, #9DCEFF)',
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"]
       }
 
     },
