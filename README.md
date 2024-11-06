@@ -22,6 +22,11 @@ O JSON Web Token é um padrão da Internet para a criação de dados com assinat
    npx tailwindcss init -p
    ```
 
+4. **Icons**
+   ```bash
+   npm install --save font-awesome
+   ```
+
 ## Servidor
 1. **Typescript + Node.js**  
    ```bash
