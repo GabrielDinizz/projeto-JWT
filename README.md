@@ -24,7 +24,7 @@ O JSON Web Token é um padrão da Internet para a criação de dados com assinat
 
 4. **Icons**
    ```bash
-   npm install --save font-awesome
+   npm install --save @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons
    ```
 
 ## Servidor
