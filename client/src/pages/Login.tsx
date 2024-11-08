@@ -1,8 +1,10 @@
 // src/pages/Login.tsx
 import React from 'react';
+import useRedirect from '../hooks/useRedirect';
 import 'font-awesome/css/font-awesome.min.css';
 
 const Login: React.FC = () => {
+    const { handleRedirect } = useRedirect('/login');
 
     return (
         <div className="flex flex-col justify-between h-screen bg-white text-gray-800">
@@ -18,7 +20,7 @@ const Login: React.FC = () => {
                         <input
                             type="email"
                             placeholder="Email"
-                            className="w-full pl-12 p-4 rounded-lg bg-gray-100 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full pl-12 p-4 rounded-lg bg-gray-100 text-gray-700 focus:outline-none focus:ring-2 focus:gradient-standard"
                         />
                     </div>
                     {/* Campo de senha com ícone */}
@@ -27,7 +29,7 @@ const Login: React.FC = () => {
                         <input
                             type="password"
                             placeholder="Senha"
-                            className="w-full pl-12 p-4 rounded-lg bg-gray-100 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="w-full pl-12 p-4 rounded-lg bg-gray-100 text-gray-700 focus:outline-none focus:ring-2 focus:gradient-standard"
                         />
                     </div>
                 </div>
@@ -35,7 +37,10 @@ const Login: React.FC = () => {
 
             {/* Botão de Login e link de Registro */}
             <div className="flex items-center mx-4 mb-10 flex-col">
-                <button className="w-full max-w-md py-4 bg-gradient-standard rounded-full text-white font-semibold text-lg">
+                <button 
+                    className="w-full max-w-md py-4 bg-gradient-standard rounded-full text-white font-semibold text-lg"
+                    onClick={handleRedirect}
+                    >
                     Login
                 </button>
                 <p className="mt-4 text-lg text-gray-600">

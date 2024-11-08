@@ -11,6 +11,7 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-standard': 'linear-gradient(to right, #92A3FD, #9DCEFF)',
+        'gradient-purple-pink': 'linear-gradient(to right, #C58BF2, #EEA4CE)'
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"]

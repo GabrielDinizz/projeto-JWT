@@ -1,8 +1,11 @@
 // src/pages/Register.tsx
 import React from 'react';
+import useRedirect from '../hooks/useRedirect';
 import 'font-awesome/css/font-awesome.min.css';
 
 const Register: React.FC = () => {
+    const { handleRedirect } = useRedirect('/register/step-2');
+
     return (
         <div className="flex flex-col justify-between h-screen bg-white text-gray-800">
             {/* Título e Subtítulo */}
@@ -49,7 +52,10 @@ const Register: React.FC = () => {
 
             {/* Botão de Próxima Etapa e link de Login */}
             <div className="flex items-center mx-4 mb-10 flex-col">
-                <button className="w-full max-w-md py-4 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full text-white font-semibold text-lg hover:bg-blue-700 transition-colors duration-300">
+                <button 
+                className="w-full max-w-md py-4 bg-gradient-standard rounded-full text-white font-semibold text-lg hover:bg-gradient-standard transition-colors duration-300"
+                onClick={handleRedirect}
+                >
                     Next Step
                 </button>
                 <p className="mt-4 text-lg text-gray-600">
