@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faWeightHanging, faChevronDown, faCalendar, faRuler } from '@fortawesome/free-solid-svg-icons';
+import { faWeightHanging, faCalendar, faRuler } from '@fortawesome/free-solid-svg-icons';
 import img from '../assets/images/girl-exercising.png'
 import useRedirect from '../hooks/useRedirect';
 
@@ -17,24 +17,10 @@ const RegisterStep2: React.FC = () => {
 
                 <div className="flex flex-col mt-4 items-center px-6 w-full">
                     <div className="relative w-full max-w-md mb-4 flex items-center">
-                        <FontAwesomeIcon icon={faUser} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
-                        <select
-                            className="w-full pl-12 pr-10 p-4 rounded-xl bg-gray-100 text-gray-700 focus:outline-none focus:ring-2 focus:gradient-standard appearance-none"
-                            defaultValue=""
-                        >
-                            <option value="" disabled>Choose activity</option>
-                            <option value="running">User</option>
-                            <option value="cycling">Personal</option>
-                            {/* Adicione outras atividades conforme necessário */}
-                        </select>
-                        <FontAwesomeIcon icon={faChevronDown} className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
-                    </div>
-
-                    <div className="relative w-full max-w-md mb-4 flex items-center">
                         <FontAwesomeIcon icon={faCalendar} className='absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400' />
                         <input
                             type="date_birth"
-                            placeholder="Date Of Birth"
+                            placeholder="Date Of Birth *"
                             className="w-full pl-12 p-4 rounded-xl bg-gray-100 text-gray-700 focus:outline-none focus:ring-2 focus:gradient-standard"
                         />
                     </div>
