@@ -8,7 +8,7 @@ async function syncDatabase() {
     // Porque meu codigo só funciona com a linha a baixo?
     console.log('Modelos carregados:', { Client, Nutritionist, Personal });
 
-    await sequelize.sync({ force: false });
+    await sequelize.sync({ force: true });
     console.log('Tabelas criadas ou sincronizadas com sucesso!');
   } catch (error) {
     console.error('Erro ao sincronizar o banco de dados:', error);

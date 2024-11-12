@@ -19,6 +19,10 @@ Personal.init({
         type: sequelize_1.DataTypes.STRING,
         allowNull: false,
     },
+    activity: {
+        type: sequelize_1.DataTypes.STRING,
+        allowNull: false,
+    },
 }, {
     sequelize: database_1.sequelize,
     modelName: 'Personal',

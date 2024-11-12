@@ -21,7 +21,7 @@ function syncDatabase() {
         try {
             // Porque meu codigo só funciona com a linha a baixo?
             console.log('Modelos carregados:', { Client: Client_1.default, Nutritionist: Nutritionist_1.default, Personal: Personal_1.default });
-            yield database_1.sequelize.sync({ force: false });
+            yield database_1.sequelize.sync({ force: true });
             console.log('Tabelas criadas ou sincronizadas com sucesso!');
         }
         catch (error) {

@@ -20,6 +20,10 @@ Client.init({
         type: sequelize_1.DataTypes.STRING,
         allowNull: false,
     },
+    activity: {
+        type: sequelize_1.DataTypes.STRING,
+        allowNull: false,
+    },
     dateBirth: {
         type: sequelize_1.DataTypes.DATEONLY,
         allowNull: false,

@@ -9,7 +9,7 @@ interface IClientAttributes {
   email: string;
   password: string;
   dateBirth: Date;
-  activity: string
+  activity: string;
   weight?: number;
   height?: number;
 }
